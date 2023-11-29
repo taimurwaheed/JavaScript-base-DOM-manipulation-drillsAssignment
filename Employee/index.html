@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="display-3 text-center">Employee</h1>
+        <div class="row">
+            <div class="col-12 col-md-3"></div>
+            <div class="col-12 col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Please enter Employee id:</label>
+                        <input type="number" name="id" id="id" class="form-control" placeholder="0000">
+                        <div class="invalid-feedback">
+                            Please enter a valid Employee ID.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Please enter Employee Name:</label>
+                        <input type="text" name="name" id="name" class="form-control">
+                        <div class="invalid-feedback">
+                            Please enter a valid Employee Name.
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="position" class="form-label">Please enter Employee Position:</label>
+                        <input type="text" name="position" id="position" class="form-control">
+                        <div class="invalid-feedback">
+                            Please enter a valid Employee Position.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="department" class="form-label">Please enter Employee Department:</label>
+                        <input type="text" name="department" id="department" class="form-control">
+                        <div class="invalid-feedback">
+                            Please enter a valid Employee Department.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="salary" class="form-label">Please enter Employee Salary:</label>
+                        <input type="number" name="salary" id="salary" class="form-control">
+                        <div class="invalid-feedback">
+                            Please enter a valid Employee Salary.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="contact " class="form-label">Please enter Employee Contact:</label>
+                        <input type="tel" name="contact " id="contact" class="form-control" maxlength="11" minlength="1">
+                        <div class="invalid-feedback">
+                            Please enter a valid Employee Contact.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Please enter Employee Date of Joining:</label>
+                        <input type="date" name="date" id="date" class="form-control">
+                        <div class="invalid-feedback">
+                            Please enter a valid Employee Date of Joining.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Please enter Employee Address:</label>
+                        <input type="text" name="address" id="address" class="form-control">
+                        <div class="invalid-feedback">
+                            Please enter a valid Employee Address.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="button" value="save" class="btn btn-success px-4 py-2 d-block mx-auto">
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md-3"></div>
+        </div>
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                    <th>Contact Information</th>
+                    <th>Date of Joining</th>
+                    <th>Address</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="employee-tbl"></tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

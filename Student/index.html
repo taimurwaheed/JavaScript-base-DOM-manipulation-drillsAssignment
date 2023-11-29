@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="display-3 text-center">Employee</h1>
+        <div class="row">
+            <div class="col-12 col-md-3"></div>
+            <div class="col-12 col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Please enter Student ID:</label>
+                        <input type="number" name="id" id="id" class="form-control">
+                        <div class="invalid-feedback">
+                            Please enter a valid Student ID.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Please enter Student Name:</label>
+                        <input type="text" name="name" id="name" class="form-control">
+                        <div class="invalid-feedback">
+                            Please enter a valid Student Name.
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="semester" class="form-label">Please enter Student Semester:</label>
+                        <input type="text" name="semester" id="semester" class="form-control">
+                        <div class="invalid-feedback">
+                            Please enter a valid Student Semester.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="department" class="form-label">Please select Student Department:</label>
+                        <select name="department" id="department" class="form-control">
+                            <option value="CS">Computer Science (CS)</option>
+                            <option value="IT">Information Technology (IT)</option>
+                            <option value="SE">Software Engineering (SE)</option>
+                            <option value="Ai">Artificial Intelligence (Ai)</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid Student Department.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="gpa" class="form-label">Please enter Student GPA:</label>
+                        <input type="number" name="gpa" id="gpa" class="form-control" placeholder="4.0">
+                        <div class="invalid-feedback">
+                            Please enter a valid Student GPA.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="contact " class="form-label">Please enter Student Contact:</label>
+                        <input type="tel" name="contact " id="contact" class="form-control" maxlength="11" minlength="1">
+                        <div class="invalid-feedback">
+                            Please enter a valid Student Contact.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Please enter Student Date of Enrollment:</label>
+                        <input type="date" name="date" id="date" class="form-control">
+                        <div class="invalid-feedback">
+                            Please enter a valid Student Date of Enrollment.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="course" class="form-label">Please enter Student Course:</label>
+                        <input type="text" name="course" id="course" class="form-control">
+                        <div class="invalid-feedback">
+                            Please enter a valid Student Course.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="button" value="save" class="btn btn-success px-4 py-2 d-block mx-auto">
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md-3"></div>
+        </div>
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Semester</th>
+                    <th>Department</th>
+                    <th>GPA</th>
+                    <th>Contact Information</th>
+                    <th>Date of Enrollment</th>
+                    <th>Course</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="student-tbl"></tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
